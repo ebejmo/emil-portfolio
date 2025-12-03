@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #f2f7fc;
+  --color-heading: #1b2535;
+  --color-text: #3f4f63;
+  --color-white: #fff;
+  --color-muted: #eff3f8;
+  --color-link: #0159f7;
+  --color-footer: #101726;
+  --color-footer-text: #798aa1;
+
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --max-width: 64rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.section {
+  padding: var(--space-4) var(--space-2);
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
