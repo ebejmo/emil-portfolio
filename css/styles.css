@@ -10,7 +10,9 @@
   --color-footer-text: #798aa1;
 
   --font-heading: 'Inter', system-ui, sans-serif;
+  --fw-heading: 500;
   --font-body: 'Inter', system-ui, sans-serif;
+  --fw-body: 400;
 
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -25,16 +27,60 @@
   box-sizing: border-box;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
   min-height: 100vh;
   font-family: var(--font-body);
+  font-weight: var(--fw-body);
   color: var(--color-text);
   background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-heading);
+  color: var(--color-heading);
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-2);
 }
 
 .section {
   padding: var(--space-4) var(--space-2);
   max-width: var(--max-width);
   margin-inline: auto;
+}
+
+.text-center {
+  text-align: center;
 }
