@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio website for Emil Bejmo, a front-end developer in progress " />
     <title>Emil Bejmo | Front-End Developer</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-32x32.png" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="site-nav">
-        <a href="#" class="site-logo">EB</a>
-        <ul class="site-nav__links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="#" class="logo" aria-label="Go to top">
+          <span class="logo-mark">&lt;EB/&gt;</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list">
+            <li><a href="#about" class="site-nav__link">About</a></li>
+            <li><a href="#projects" class="site-nav__link">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>

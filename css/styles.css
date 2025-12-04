@@ -3,6 +3,7 @@
   --color-heading: #1b2535;
   --color-text: #3f4f63;
   --color-white: #ffffff;
+  --color-crazy-orange: #fa9d2f;
   --color-accent: #3478f6;
   --color-muted: #eff3f8;
   --color-link: #0159f7;
@@ -27,10 +28,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body,
 h1,
 h2,
@@ -44,6 +41,15 @@ li {
 
 ul {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,11 +68,6 @@ h3 {
   font-weight: var(--fw-heading);
   color: var(--color-heading);
   line-height: 1.2;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 .container {
