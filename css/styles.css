@@ -3,7 +3,7 @@
   --color-heading: #1b2535;
   --color-text: #3f4f63;
   --color-white: #ffffff;
-  --color-crazy-orange: #fa9d2f;
+  --color-crazy-orange: #d67c00;
   --color-accent: #3478f6;
   --color-muted: #eff3f8;
   --color-link: #0159f7;
@@ -53,6 +53,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-family: var(--font-body);
   font-weight: var(--fw-body);
