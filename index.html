@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-16x16.png" />
@@ -31,13 +33,32 @@
     </header>
 
     <main>
-      <section id="hero" class="section section--hero">
-        <h1>Emil Bejmo</h1>
-        <p>Front-End Developer in progress, ex-pro hockey player. Dad, golf enthusiast.</p>
+      <section id="hero" class="hero">
+        <div class="container hero__inner text-center">
+          <div class="hero__avatar hero__emoji">
+            <span aria-hidden="true">👋🏻</span>
+          </div>
+
+          <p class="hero__eyebrow">Tjena, I'm Emil.</p>
+
+          <h1 class="hero__title">Front-end developer in progress.</h1>
+
+          <div class="hero__actions">
+            <a href="#projects" class="hero__button">View Projects</a>
+          </div>
+        </div>
       </section>
 
-      <section id="about" class="section section--about">
-        <h2>About Me</h2>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__header text-center">
+            <h2 class="about__title">About me</h2>
+          </div>
+          <div class="about__card">
+            <p>Valar Morghulis: all men must die. The Hound and the Mountain face off in a brutal duel. The Children of the Forest create the first White Walker.</p>
+            <p>Winter is coming, and the North remembers. Bran becomes the Three-Eyed Raven, seeing all. The Wildlings seek freedom beyond the Wall. ☕.</p>
+          </div>
+        </div>
       </section>
 
       <section id="projects" class="section section--projects">
