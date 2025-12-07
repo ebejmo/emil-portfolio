@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.6rem 1.6rem;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
   font-weight: 400;
   font-size: 0.98rem;
   text-decoration: none;
@@ -66,14 +66,13 @@
     var(--color-orange-2)
   );
   color: var(--color-white);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
   transition: transform 150ms ease, box-shadow 150ms ease,
     background-color 150ms ease;
 }
 
 .hero__button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
   background-image: linear-gradient(135deg, #b96800, #e6a43a);
 }
 

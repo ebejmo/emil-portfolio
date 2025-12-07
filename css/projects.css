@@ -1,0 +1,115 @@
+.projects {
+  padding-block: 4rem 4.5rem;
+}
+
+.projects__header {
+  margin-bottom: 2.5rem;
+}
+
+.projects__title {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.projects__title::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 4px;
+  border-radius: 2rem;
+  margin: 0.75rem auto 0;
+  background-image: linear-gradient(
+    135deg,
+    var(--color-orange-1, #d67c00),
+    var(--color-orange-2, #ffb347)
+  );
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  height: 100%;
+}
+
+.project-card__image {
+  background-color: var(--color-crazy-orange);
+  aspect-ratio: 16 / 9;
+}
+
+.project-card__body {
+  padding: 1.5rem 1.25rem 0 1.25rem;
+  flex: 1;
+}
+
+.project-card__title {
+  font-size: 1rem;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+
+.project-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.project-card__badge {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  background-color: var(--color-muted);
+}
+
+.project-card__footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 1.25rem;
+  margin-top: auto;
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-orange-2);
+}
+
+.project-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__link:hover {
+  color: var(--color-orange-1);
+}
+
+.project-card__link svg {
+  stroke: var(--color-orange-2);
+  transition: stroke 0.15s ease, color 0.15s ease;
+}
+
+.project-card__link:hover svg {
+  stroke: var(--color-orange-1);
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

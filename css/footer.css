@@ -42,7 +42,11 @@
 
 .social-link:hover .social-icon,
 .social-link:focus-visible .social-icon {
-  background-color: var(--color-crazy-orange);
+  background-image: linear-gradient(
+    135deg,
+    var(--color-orange-1),
+    var(--color-orange-2)
+  );
   color: var(--color-white);
   transform: translateY(-1px);
 }

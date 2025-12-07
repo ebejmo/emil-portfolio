@@ -30,9 +30,9 @@
   max-width: 42rem;
   margin-inline: auto;
   background-color: var(--color-white);
-  border-radius: 2rem;
+  border-radius: 0.8rem;
   padding: 2rem 2.25rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
   font-size: 0.98rem;
   line-height: 1.6;
 }
